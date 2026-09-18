@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2c6e9b;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #235a80;
+}
+
+#mensagem {
+  text-align: center;
+  color: #555;
+}
+
+.livro {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.livro h3 {
+  margin: 0 0 6px 0;
+}
+
+.livro p {
+  margin: 2px 0;
+  color: #444;
+}
