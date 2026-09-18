@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const conectarBanco = require('./config/db');
+const livrosRoutes = require('./routes/livrosRoutes');
 
 const app = express();
 
@@ -17,6 +18,8 @@ app.get('/api/status', (req, res) => {
     mensagem: 'Servidor funcionando'
   });
 });
+
+app.use('/api/livros', livrosRoutes);
 
 const PORT = process.env.PORT || 3000;
 
