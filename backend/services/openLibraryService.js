@@ -18,7 +18,18 @@ async function buscarPorTitulo(titulo) {
       autor: item.author_name ? item.author_name[0] : 'Autor desconhecido',
       ano: item.first_publish_year || 'Ano nao informado'
     };
+
+    
   });
-}
+  async function buscarPorTitulo(titulo, idioma) {
+  let url = URL_BASE + '?title=' + encodeURIComponent(titulo) + '&limit=10';
+
+  if (idioma) {
+    url += '&q=language:' + idioma;
+  }
+
+  const resposta = await fetch(url);
+
+}}
 
 module.exports = { buscarPorTitulo };

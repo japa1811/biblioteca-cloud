@@ -2,6 +2,7 @@ const openLibraryService = require('../services/openLibraryService');
 
 async function pesquisar(req, res) {
   const titulo = req.query.titulo;
+  const idioma = req.query.idioma;
 
   if (!titulo || titulo.trim().length < 2) {
     return res.status(400).json({
